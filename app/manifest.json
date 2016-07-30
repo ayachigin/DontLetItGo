@@ -1,0 +1,19 @@
+{
+    "name": "Don't let it go",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "D言語について調べようと思ったらいつの間にかキーワードがgolangになってるのを止める",
+    "omnibox": { "keyword" : ">d" },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://www.google.co.jp/search?*"
+    ],
+    "icons": {
+        "16": "icon16.png"
+    },
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    }
+}
